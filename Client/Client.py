@@ -3,6 +3,29 @@ import requests
 isOpen = True
 
 
+
+
+def printMenu():
+    pass
+
+def addEmployee():
+    print("ss")
+def getEmployeeById():
+    pass
+def getEmployeeByName():
+    pass
+def getAllEmployees():
+    pass
+def updateEmployee():
+    pass
+def deleteEmployee():
+    pass
+def importEmployeesFromCsv():
+    pass
+def exportEmployeesToCsv():
+    pass
+
+
 functions = {
     0: testServer,
     1: addEmployee,
@@ -15,18 +38,6 @@ functions = {
     8: exportEmployeesToCsv,
     9: exit
 }
-
-def printMenu():
-    pass
-
-def addEmployee():
-    pass
-def printMenu():
-    pass
-def printMenu():
-    pass
-
-
 def main():
     print("Welcome")
     while(isOpen):
