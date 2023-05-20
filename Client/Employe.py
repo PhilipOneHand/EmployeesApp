@@ -1,13 +1,13 @@
 class Employee:
 
-    def _init_(self, name, gender, age, id, job, salary):
-        self.__name = name
+    def _init_(self, id,first_name,last_name, gender, age, salary,email):
+        self.__firstName = first_name
+        self.__lastName = last_name
         self.__gender = gender
         self.__age = age
         self.__id = id
-        self.__job = job
         self.__salary = salary
-
+        self.__email = email
 
     def _setName_(self, name):
         self.__name = name

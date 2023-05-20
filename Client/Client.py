@@ -9,7 +9,10 @@ def printMenu():
     pass
 
 def addEmployee():
-    print("ss")
+    details=input("Please enter: (id, firs name, last name,gender, age,salary,mail)").split(",")
+    newEmp=Employee(int(details[0]),details[1],details[2],details[3],float(details[4]),float(details[5]),details[6])
+    newEmpJson = json.dumps(newEmp)
+    requests.post(url+'/addEmployee',json=newEmpJson)
 def getEmployeeById():
     pass
 def getEmployeeByName():
